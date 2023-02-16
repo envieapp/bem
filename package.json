@@ -1,0 +1,53 @@
+{
+  "name": "@envie/bem",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/envieapp/bem.git"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.jetbrains.space/bruhabruh/p/envie/npm/"
+  },
+  "scripts": {
+    "build": "tsc && vite build",
+    "lint": "tsc --noEmit && eslint src/**/*.ts{,x}",
+    "format": "yarn run lint:eslint --fix",
+    "test": "vitest run",
+    "test:watch": "yarn run test --watch",
+    "coverage": "yarn run test --coverage",
+    "publish-package": "yarn run build && yarn run lint && yarn run test && npm publish --registry https://npm.pkg.jetbrains.space/bruhabruh/p/envie/npm/"
+  },
+  "devDependencies": {
+    "@types/node": "^18.13.0",
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "@typescript-eslint/parser": "^5.52.0",
+    "@vitest/coverage-c8": "^0.28.5",
+    "eslint": "^8.34.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.32.2",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0",
+    "vite-plugin-dts": "^1.7.3",
+    "vitest": "^0.28.5"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
+    }
+  }
+}

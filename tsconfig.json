@@ -1,0 +1,22 @@
+{
+  "display": "bem",
+  "compilerOptions": {
+    "outDir": "dist",
+    "composite": false,
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSources": false,
+    "isolatedModules": true,
+    "moduleResolution": "node",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "preserveWatchOutput": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "types": ["vitest/globals"]
+  },
+  "include": ["src", "vite.config.ts",  "vitest.config.ts", ".eslintrc.js"],
+  "exclude": ["node_modules", "dist", "coverage"],
+}
