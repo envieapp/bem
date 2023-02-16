@@ -38,7 +38,7 @@ jobs:
           prop_path: 'total.lines.pct'
 
       - name: Create the Badge
-        uses: schneegans/dynamic-badges-action@v1.0.0
+        uses: schneegans/dynamic-badges-action@v1.6.0
         with:
           auth: ${{ secrets.GIST_SECRET }}
           gistID: 96bdbce4d06b5692e89d42106c98eca9
