@@ -17,6 +17,6 @@
     "strict": true,
     "types": ["vitest/globals"]
   },
-  "include": ["src", "vite.config.ts",  "vitest.config.ts", ".eslintrc.js"],
+  "include": ["src", "vite.config.ts",  "vitest.config.ts", ".eslintrc.cjs"],
   "exclude": ["node_modules", "dist", "coverage"],
 }
