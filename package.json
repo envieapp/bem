@@ -16,11 +16,11 @@
   "scripts": {
     "build": "tsc && vite build",
     "lint": "tsc --noEmit && eslint src/**/*.ts{,x}",
-    "format": "yarn run lint:eslint --fix",
+    "format": "npm run lint:eslint --fix",
     "test": "vitest run",
-    "test:watch": "yarn run test --watch",
-    "coverage": "yarn run test --coverage",
-    "publish-package": "yarn run build && yarn run lint && yarn run test && npm publish --registry https://npm.pkg.jetbrains.space/bruhabruh/p/envie/npm/"
+    "test:watch": "npm run test --watch",
+    "coverage": "npm run test --coverage",
+    "publish-package": "npm run build && npm run lint && npm run test && npm publish --registry https://npm.pkg.jetbrains.space/bruhabruh/p/envie/npm/"
   },
   "devDependencies": {
     "@types/node": "^18.13.0",
