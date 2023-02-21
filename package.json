@@ -11,7 +11,7 @@
     "node": "18.x"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.jetbrains.space/bruhabruh/p/envie/npm/"
+    "registry": "https://npm.pkg.jetbrains.space/envie/p/main/npm/"
   },
   "scripts": {
     "build": "tsc && vite build",
